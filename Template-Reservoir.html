@@ -14,13 +14,23 @@
 <script type="text/javascript">
 
     function q1_click() {
-	var answer = $("input[name='q1']:checked"). val();
+	var answer = $("input[name='q1']:checked").val();
 	if (answer == 2) {
-		alert("太棒了，你答對囉~");
+		alert("太棒了，你答對囉。 水庫的建立，會衝擊河川上游的生態環境，使水庫所在從河川生態系統變更為湖泊生態，原本棲息在河川上游的生物可能無法生活，也會影響到下游的生物生活環境。");
 	} else {
 		alert("真可惜，你可以再想想看~");
 	}
     }
+
+    function q2_click() {
+	var answer = $("input[name='q2']:checked").val();
+	if (answer == 3) {
+		alert("太棒了，你答對囉。 外來種生物的侵入會導致原本生在的動植物大量死亡，因為外來種生物大部分沒有天敵，還會搶奪食物，甚至攻擊當地原來的生物。");
+	} else {
+		alert("真可惜，你可以再想想看~");
+	}
+    }
+
 
 </script>
 	<body class="subpage">
@@ -34,7 +44,7 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">任務集</a></li>
+					<li><a href="index.html">賞鳥</a></li>
 					<!--<li><a href="generic.html">Generic</a></li>-->
 					<!--<li><a href="elements.html">Elements</a></li>-->
 				</ul>
@@ -96,8 +106,29 @@
 											<input type="radio" id="q1_4" name="q1" class="Answer_SingleOptionButton" value="4">
 											<label for="q1_4">生物的種類會增加</label>
 										</div>
-								<hr />
 								<a class="button special" onclick="q1_click()">揭曉囉~</a>
+								<hr />
+
+
+								<h3>2. 下列何種人類行為導致臺灣許多動、植物的死亡？</h3>
+										<div class="40u 12u$(small)">
+											<input type="radio" id="q2_1" name="q2" class="Answer_SingleOptionButton" value="1">
+											<label for="q2_1">設立禁獵區</label>
+										</div>
+										<div class="40u 12u$(small)">
+											<input type="radio" id="q2_2" name="q2" class="Answer_SingleOptionButton" value="2">
+											<label for="q2_2">種植樹木</label>
+										</div>
+										<div class="40u 12u$(small)">
+											<input type="radio" id="q2_3" name="q2" class="Answer_SingleOptionButton" value="3">
+											<label for="q2_3">任意引進外來物種</label>
+										</div>
+										<div class="40u 12u$(small)">
+											<input type="radio" id="q2_4" name="q2" class="Answer_SingleOptionButton" value="4">
+											<label for="q2_4">設立國家公園</label>
+										</div>
+								<a class="button special" onclick="q2_click()">揭曉囉~</a>
+								<hr />
 
 						</div>
 					</div>
