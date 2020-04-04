@@ -11,7 +11,7 @@
     function q1_click() {
 	var answer = $("input[name='q1']:checked").val();
 	if (answer == 3) {
-		alert("太棒了，你答對囉~");
+		alert("太棒了，你答對囉~ 正解：萍蓬草。");
 		$("#divAnswerQ1").show();
 	} else if (answer == undefined) {
 		alert("要先選答案唷~");
@@ -20,6 +20,22 @@
 	}
     }
 
+    function q1_answer1_click() {
+	$("#q1_1").attr("checked",true); 
+	q1_click();
+    }
+    function q1_answer2_click() {
+	$("#q1_2").attr("checked",true); 
+	q1_click();
+    }
+    function q1_answer3_click() {
+	$("#q1_3").attr("checked",true); 
+	q1_click();
+    }
+    function q1_answer4_click() {
+	$("#q1_4").attr("checked",true); 
+	q1_click();
+    }
 
 
 </script>
@@ -84,22 +100,22 @@
 										<div class="40u 12u$(small)" style="margin:5px;">
 											<input type="radio" id="q1_1" name="q1" class="Answer_SingleOptionButton" value="1">
 											<label for="q1_1"><font size="5">波斯菊</font></label>
-											<span class="image fit"><img src="images/大波斯菊.jpg" alt="" /></span>
+											<span class="image fit" onclick="q1_answer1_click()"><img src="images/大波斯菊.jpg" alt="" /></span>
 										</div>
 										<div class="40u 12u$(small)" style="margin:5px;">
 											<input type="radio" id="q1_2" name="q1" class="Answer_SingleOptionButton" value="2">
 											<label for="q1_2"><font size="5">鬱金香</font></label>
-											<span class="image fit"><img src="images/鬱金香.jpg" alt="" /></span>
+											<span class="image fit" onclick="q1_answer2_click()"><img src="images/鬱金香.jpg" alt="" /></span>
 										</div>
 										<div class="40u 12u$(small)" style="margin:5px;">
 											<input type="radio" id="q1_3" name="q1" class="Answer_SingleOptionButton" value="3">
 											<label for="q1_3"><font size="5">萍蓬草</font></label>
-											<span class="image fit"><img src="images/萍蓬草.jpg" alt="" /></span>
+											<span class="image fit" onclick="q1_answer3_click()"><img src="images/萍蓬草.jpg" alt="" /></span>
 										</div>
 										<div class="40u 12u$(small)" style="margin:5px;">
 											<input type="radio" id="q1_4" name="q1" class="Answer_SingleOptionButton" value="4">
 											<label for="q1_4"><font size="5">睡蓮</font></label>
-											<span class="image fit"><img src="images/睡蓮.jpg" alt="" /></span>
+											<span class="image fit" onclick="q1_answer4_click()"><img src="images/睡蓮.jpg" alt="" /></span>
 										</div>
 								<a class="button special" onclick="q1_click()">看正解~</a>
 								<hr />
