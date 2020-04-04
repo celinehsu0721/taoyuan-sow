@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>萍蓬草 Yellow Water Lily</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+<script type="text/javascript">
+
+    function q1_click() {
+	var answer = $("input[name='q1']:checked").val();
+	if (answer == 3) {
+		alert("太棒了，你答對囉~ 正解：萍蓬草。");
+		$("#divAnswerQ1").show();
+	} else if (answer == undefined) {
+		alert("要先選答案唷~");
+	} else {
+		alert("真可惜，可以再想想看~");
+	}
+    }
+
+    function q1_answer1_click() {
+	$("#q1_1").attr("checked",true); 
+	q1_click();
+    }
+    function q1_answer2_click() {
+	$("#q1_2").attr("checked",true); 
+	q1_click();
+    }
+    function q1_answer3_click() {
+	$("#q1_3").attr("checked",true); 
+	q1_click();
+    }
+    function q1_answer4_click() {
+	$("#q1_4").attr("checked",true); 
+	q1_click();
+    }
+
+
+</script>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo">桃二五股溼地任務關卡 <span>by 荒野桃二親子團</span></div>
+				<a href="#menu">任務集</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="202004WuGuWetlands.html">五股溼地</a></li>
+					<!--<li><a href="generic.html">Generic</a></li>-->
+					<!--<li><a href="elements.html">Elements</a></li>-->
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>五股溼地</p>
+						<h2>睡蓮的親戚</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+
+
+
+
+						<div class="content">
+							<!--<header class="align-center">
+								<p>五股溼地</p>
+								<h2>萍逢草圖騰</h2>
+							</header>-->
+							<h2>營造水鳥灘地後的傑作</h2>
+							<!--<p>印象水沙連</p>-->
+
+							<p>我們曾經拜訪過新屋永安的石滬，在五股溼地我們發現了這個圖騰，它的工法類似石滬，用廢棄的磚塊及石頭堆砌而成，讓我們一起來探索它吧！</p>
+
+
+							<span class="image fit"><img src="images/萍蓬草圖騰.jpg" alt="" /></span>
+
+
+						</div>
+
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<!-- Elements -->
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+
+							<!-- Text stuff -->
+								<h3>觀察一下，這個上方照片中的圖騰像是什麼花？</h3>
+										<div class="40u 12u$(small)" style="margin:5px;">
+											<input type="radio" id="q1_1" name="q1" class="Answer_SingleOptionButton" value="1">
+											<label for="q1_1"><font size="5">波斯菊</font></label>
+											<span class="image fit" onclick="q1_answer1_click()"><img src="images/大波斯菊.jpg" alt="" /></span>
+										</div>
+										<div class="40u 12u$(small)" style="margin:5px;">
+											<input type="radio" id="q1_2" name="q1" class="Answer_SingleOptionButton" value="2">
+											<label for="q1_2"><font size="5">鬱金香</font></label>
+											<span class="image fit" onclick="q1_answer2_click()"><img src="images/鬱金香.jpg" alt="" /></span>
+										</div>
+										<div class="40u 12u$(small)" style="margin:5px;">
+											<input type="radio" id="q1_3" name="q1" class="Answer_SingleOptionButton" value="3">
+											<label for="q1_3"><font size="5">萍蓬草</font></label>
+											<span class="image fit" onclick="q1_answer3_click()"><img src="images/萍蓬草.jpg" alt="" /></span>
+										</div>
+										<div class="40u 12u$(small)" style="margin:5px;">
+											<input type="radio" id="q1_4" name="q1" class="Answer_SingleOptionButton" value="4">
+											<label for="q1_4"><font size="5">睡蓮</font></label>
+											<span class="image fit" onclick="q1_answer4_click()"><img src="images/睡蓮.jpg" alt="" /></span>
+										</div>
+								<a class="button special" onclick="q1_click()">答題囉~</a>
+								<hr />
+
+								<div id="divAnswerQ1" style="display:none;">
+									<h3>正解：萍蓬草</h3>
+									<p>【說明】大家有沒有對這個圖騰很熟悉，找找看桃二的黃T還是荒野領巾有沒有發現呢？它是荒野協會的象徵—台灣萍蓬草</p>
+									<p><span class="image fit"><img src="images/sow_logo.png" alt="" /></span></p>
+								</div>
+
+						</div>
+					</div>
+
+			</div>
+
+			<div id="main" class="container">
+					<h2 id="elements">【延伸閱讀】</h2>
+					<h3>石滬的由來</h3>
+					<p>2004年，當時的台北縣政府成立「五股濕地生態園區」，交由荒野保護協會認養做棲地的管理。又在2017年10月時，為營造水鳥灘地而挖地，將挖出來的廢棄磚塊及石頭堆砌了象徵荒野精神的台灣萍蓬草，強調荒野守護大自然的決心。</p>
+					<h3>認識台灣萍蓬草</h3>
+					<p>從園藝學家的角度來看，台灣萍蓬草也是世界所有的萍蓬草中最美麗的一種，因為它<font color="red">金黃的花瓣中有著鮮紅色的花心</font>，而且台灣萍蓬草是台灣溼地植物中最著名的一種，對台灣島尤其別具意義。萍蓬草屬於溫帶性水生植物，主要分布在北美洲及歐亞大陸北部，而<font color="red">台灣萍蓬草是世界萍蓬草分布的南限，是冰河期遺留在台灣的孑遺植物。</font></p>
+					<p>更難得的是，因為候鳥，特別是雁鴨的遷移，水生植物總被廣泛傳播，因此在世界各地少有特有種的水生植物，但<font color="red">台灣萍蓬草卻是台灣特有種</font>，頗引起國際自然學家的重視。但遺憾的是，<font color="red">這麼珍貴的植物卻由於不當的開發而瀕臨絕種。</font></p>
+					<p>創立荒野保護協會之後，創始成員希望找尋具有台灣代表性的物種做為識別標誌，因此決定<font color="red">以台灣萍蓬草作為協會的象徵</font>，發展出簡化線條的logo以便運用，<font color="red">讓荒野保護協會的精神像台灣萍蓬草一樣，成為棲地守護的指標之一。</font></p>
+
+					<h2 id="elements">【延伸閱讀2】</h2>
+					<h3>大蜂可以另外陪伴小蜂閱讀以下2篇報導做更深入的認識</h3>
+					<p><a href="http://wugu-wetland.sow.org.tw/2017/10/2017.html?m=1" target="_blank">1. 2017年十月份水鳥灘地營造</a></p>
+					<p><a href="https://www.peopo.org/news/380085" target="_blank">2. 這些磚石代表了洲後村的遺跡，曾經豐饒的土地鹽化後成為溼地</a></p>
+			</div>
+
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/groups/489356797911055/?ref=group_header" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://sites.google.com/view/sowty2/home" target="_blank" class="icon fa-google"><span class="label">Google</span></a></li>
+						<li><a href="mailto:sowtaoyuanbee2@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; SOW-Taoyuan2 All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
